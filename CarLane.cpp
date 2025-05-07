@@ -6,7 +6,6 @@ CarLane::CarLane(int y, int speed) : laneY(y), speed(speed), lastSpawnTime(0) {}
 
 void CarLane::regenerateCars(Uint32 currentTime) {
     if (currentTime - lastSpawnTime >= REGENERATION_INTERVAL) {
-        // Tạo lại xe trong lane
         int x1 = 640 + rand() % 100;
         Entity car;
         car.rect = { x1, laneY, 80, 40 };
