@@ -1,5 +1,5 @@
 #                                                                  BÀI TẬP LỚN #
- Họ và tên: Phạm Sao Mai
+ Họ và tên: Phạm Sao Mai #
  Mã sinh viên: 24022814
 
  Chủ đề game: Nhân vật di chuyển qua các chướng ngại vật, bao gồm cây là chướng ngại vật đứng yên và ô tô là chướng ngại vật di chuyển từ phải sang trái. Nếu nhân vật di chuyển chạm vào biên trái hoặc phải 
