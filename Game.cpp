@@ -91,7 +91,6 @@ bool Game::init() {
         Mix_PlayMusic(backgroundMusic, -1);
     }
 
-    // Khởi tạo nút
     mainMenuButtons = {
         {{200, 180, 240, 60}, "Start", nullptr, false},
         {{200, 280, 240, 60}, "Sound", nullptr, false}
