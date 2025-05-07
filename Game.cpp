@@ -74,7 +74,6 @@ bool Game::init() {
     treeTex = IMG_LoadTexture(renderer, "Tree.png");
     backgroundTex = IMG_LoadTexture(renderer, "back1.jpg");
     menuBackgroundTex = IMG_LoadTexture(renderer, "background_menu.jpg");
-    buttonBgTex = IMG_LoadTexture(renderer, "front.png");
     font = TTF_OpenFont("font.ttf", 32);
     largeFont = TTF_OpenFont("font3.ttf", 48);
     backgroundMusic = Mix_LoadMUS("background.mp3");
