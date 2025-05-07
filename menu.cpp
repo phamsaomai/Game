@@ -56,7 +56,6 @@ bool showMenu(SDL_Window* window, SDL_Renderer* renderer) {
         }
         SDL_RenderCopy(renderer, playTex, nullptr, &playRect);
 
-        // Vẽ nút Exit
         SDL_Rect exitRect = { SCREEN_WIDTH / 2 - 100, SCREEN_HEIGHT / 2 + 10, 200, 50 };
         if (currentSelection == 1) {
             SDL_SetTextureColorMod(exitTex, 255, 255, 0);
