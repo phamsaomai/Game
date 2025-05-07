@@ -5,10 +5,8 @@
 
 bool showMenu(SDL_Window* window, SDL_Renderer* renderer) {
     SDL_Texture* menuBackground = IMG_LoadTexture(renderer, "menu_background.png");
-    SDL_Texture* playTex = IMG_LoadTexture(renderer, "play_button.png");
-    SDL_Texture* exitTex = IMG_LoadTexture(renderer, "exit_button.png");
 
-    if (!menuBackground || !playTex || !exitTex) {
+    if (!menuBackground) {
         std::cerr << "Không thể tải hình ảnh menu.\n";
         return false;
     }
@@ -48,30 +46,12 @@ bool showMenu(SDL_Window* window, SDL_Renderer* renderer) {
         SDL_RenderClear(renderer);
         SDL_RenderCopy(renderer, menuBackground, nullptr, nullptr);
 
-        SDL_Rect playRect = { SCREEN_WIDTH / 2 - 100, SCREEN_HEIGHT / 2 - 50, 200, 50 };
-        if (currentSelection == 0) {
-            SDL_SetTextureColorMod(playTex, 255, 255, 0);
-        } else {
-            SDL_SetTextureColorMod(playTex, 255, 255, 255);
-        }
-        SDL_RenderCopy(renderer, playTex, nullptr, &playRect);
-
-        SDL_Rect exitRect = { SCREEN_WIDTH / 2 - 100, SCREEN_HEIGHT / 2 + 10, 200, 50 };
-        if (currentSelection == 1) {
-            SDL_SetTextureColorMod(exitTex, 255, 255, 0);
-        } else {
-            SDL_SetTextureColorMod(exitTex, 255, 255, 255);
-        }
-        SDL_RenderCopy(renderer, exitTex, nullptr, &exitRect);
-
         SDL_RenderPresent(renderer);
 
         SDL_Delay(1000 / 60);
     }
 
     SDL_DestroyTexture(menuBackground);
-    SDL_DestroyTexture(playTex);
-    SDL_DestroyTexture(exitTex);
 
     return false;
 }
