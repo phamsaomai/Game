@@ -4,7 +4,7 @@
 
 
 bool showMenu(SDL_Window* window, SDL_Renderer* renderer) {
-    SDL_Texture* menuBackground = IMG_LoadTexture(renderer, "menu_background.png");
+    SDL_Texture* menuBackground = IMG_LoadTexture(renderer, "background_menu.png");
 
     if (!menuBackground) {
         std::cerr << "Không thể tải hình ảnh menu.\n";
