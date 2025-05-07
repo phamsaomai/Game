@@ -27,7 +27,6 @@ bool checkCarOverlap(int x, int y, const std::vector<CarLane>& carLanes) {
 void spawnObstacles(int row, std::vector<CarLane>& carLanes, std::vector<Entity>& trees) {
     int y = 480 / 2 - row * 40;
 
-    // Tạo cây
     if (row >= 5) {
         std::vector<int> positions;
         while (positions.size() < 3) {
@@ -56,7 +55,6 @@ void spawnObstacles(int row, std::vector<CarLane>& carLanes, std::vector<Entity>
             car.rect = { x1, y, 80, 40 };
             car.vx = -speed;
 
-            // Thêm ô tô vào lane
             newLane.cars.push_back(car);
             carLanes.push_back(newLane);
         }
