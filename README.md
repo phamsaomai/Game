@@ -8,5 +8,6 @@
 
  Ngưỡng điểm: 7
  Các lí do
-       + Game đã có các đồ họa đơn giản
-       +
+       + Game đã có các đồ họa đơn giản, âm thanh
+       + Sử dụng các kiến thức đã học như là xử lý va chạm, di chuyển màn hình, sử dụng sự kiện bàn phím và sự kiện chuột
+       + Sử dụng thêm các lệnh để random vị trí các chướng ngại vật và vị trí, tốc độ di chuyển của ô tô
